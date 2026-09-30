@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "High-DensityvSparsefNIRS_WordColorStroop_Sparse_Anderson_2025",
+  "description": "This dataset contains functional near-infrared spectroscopy (fNIRS) recordings collected during a word-color Stroop task using a sparse fNIRS montage. It accompanies a study comparing high-density, multi-distance fNIRS with sparse configurations for detecting task-related brain activity. The data are organized in BIDS format and are mirrored on NEMAR from OpenNeuro.",
+  "methods_description": "Functional near-infrared spectroscopy data were acquired during a Word-Color Stroop task using both high-density and sparse fNIRS probe configurations. Measurements include multi-distance fNIRS signals capturing hemodynamic responses. This study compares high-density probe arrangements with conventional sparse configurations to evaluate differences in brain activity detection.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,6 +30,25 @@
       "orcid": "0000-0002-4291-2847"
     }
   },
+  "keywords": [
+    {
+      "term": "fNIRS"
+    },
+    {
+      "term": "Stroop task"
+    },
+    {
+      "term": "sparse montage"
+    },
+    {
+      "term": "high-density fNIRS"
+    },
+    {
+      "term": "Spectroscopy, Near-Infrared",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D019265"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006459.v1.0.0",
@@ -40,32 +61,35 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on006459",
-      "identifier_type": "URL",
+      "identifier": "10.1101/2025.03.12.642917",
+      "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.1101/2025.03.12.642917",
-      "identifier_type": "DOI",
+      "identifier": "https://nemar.org/dataset/on006459",
+      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
     {
+      "funder_name": "This project was supported by NIH NEW grant U01-EB 029856 and Boston University research funds."
+    },
+    {
       "funder_name": "NIH",
-      "award_number": "U01-EB 029856"
+      "award_number": "U01-EB029856"
     },
     {
       "funder_name": "Boston University"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "fNIRS Dataset",
   "modalities": [
     "nirs"
   ],
-  "resource_type_specific": "fNIRS Dataset",
   "sizes": [
-    "176.3 MB (18 files)"
+    "168 MB (18 files)"
   ],
   "formats": [
     ".json",
@@ -73,37 +97,6 @@
     ".snirf",
     ".tsv",
     ".yml"
-  ],
-  "description": "This dataset comprises high-density and sparse functional near-infrared spectroscopy (fNIRS) measurements acquired during a Word-Color Stroop task from 10 participants. The study investigates whether high-density multi-distance fNIRS configurations enhance detection of brain activity compared to conventional sparse probe arrangements. Data include raw fNIRS signals suitable for cognitive neuroscience research on executive function and conflict processing.",
-  "methods_description": "Functional near-infrared spectroscopy data were acquired during a Word-Color Stroop task using both high-density and sparse fNIRS probe configurations. Measurements include multi-distance fNIRS signals capturing hemodynamic responses. This study compares high-density probe arrangements with conventional sparse configurations to evaluate differences in brain activity detection.",
-  "keywords": [
-    {
-      "term": "fNIRS"
-    },
-    {
-      "term": "functional near-infrared spectroscopy"
-    },
-    {
-      "term": "Stroop task"
-    },
-    {
-      "term": "executive function"
-    },
-    {
-      "term": "hemodynamics"
-    },
-    {
-      "term": "cognitive neuroscience"
-    },
-    {
-      "term": "brain imaging"
-    },
-    {
-      "term": "multi-distance fNIRS"
-    },
-    {
-      "term": "probe configuration"
-    }
   ],
   "source_hash": "27c0ff309a4145d4cdbd3df53a9ca8837fa24c4c8cc48baa349ec4b3e8359534"
 }
